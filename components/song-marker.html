@@ -1,0 +1,28 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../bower_components/paper-input/paper-input.html">
+<link rel="import" href="../bower_components/paper-slider/paper-slider.html">
+<link rel="import" href="../bower_components/paper-slider/paper-fab.html">
+
+<polymer-element name="song-marker" attributes="
+  time
+  name
+  start
+  stop">
+  <template>
+    <LINK REL="StyleSheet" HREF="song-marker.css" TYPE="text/css" >
+
+
+    <paper-button raised on-click={{edit}}>E</paper-button>
+    <input type=button value="R" on-click={{removeMe}}></input>
+    {{visualTime}}
+    <paper-button raised on-click={{start}} >{{name}}</paper-button>
+    <paper-button raised on-click={{stop}}>stop</paper-button>
+
+
+
+  </template>
+
+  <script src="song-marker.js"></script>
+
+</polymer-element>
